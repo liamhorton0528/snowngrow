@@ -150,13 +150,14 @@ hr {
 }
 
 .welcome_div {
+  color: white;
   font-weight:500;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   margin-inline: 13%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1em;
   border-radius: 15px;
 }
@@ -332,7 +333,8 @@ textarea {
 }
 
 .family_content {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   border-radius: 8px;
   padding: 1em 2em;
 }

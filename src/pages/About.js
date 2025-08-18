@@ -2,7 +2,7 @@ import {Link, useNavigate} from 'react-router-dom';
 
 export default function About() {
     return (
-        <div>
+        <div className='page_content'>
             <Family />
             <Team />
             <Careers />
@@ -28,7 +28,7 @@ function Team() {
     return (
         <div className="team_container">
             <div className="team_div">
-                <h1>Our Team</h1>
+                <h1>Our Team</h1><br/>
                 <div className="members">
                     <Team_Member name={'Pat Secours'} title={'Owner'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.'} winter={"block"} summer={"block"} />
                     <Team_Member name={'Rachel Secours'} title={'Admin Manager'} text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.'} winter={"block"} summer={"block"} />

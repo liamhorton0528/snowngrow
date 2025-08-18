@@ -55,7 +55,7 @@ function Services() {
     function Service(props) {
         return (
             <div className="service_item">
-                <img src={props.src} alt={props.alt} className='service_img' /><br/>
+                <img src={props.src} alt={props.alt} className='service_img' /><br/><br/>
                 {/* <b><span style={{fontSize: 'x-large'}}>{props.title}</span></b> */}
                 <h3>{props.title}</h3>
                 <p>{props.text}</p>
