@@ -147,7 +147,7 @@ function ContactForm({refProp}) {
         if (res.ok) {
         setStatus("Message sent!");
         } else {
-        setStatus("Error: " + data.message);
+        setStatus("Error: " + data.message + `\nIt looks like our email service is having some issues, feel free to email us at snow.n.grow@gmail.com in the meantime.`);
         }
     };
 
