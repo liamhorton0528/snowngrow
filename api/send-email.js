@@ -10,13 +10,16 @@ export default async function handler(req, res) {
   const { name, email, message } = req.body;
 
   try {
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString("en-CA"); 
+
     const msg = {
       to: process.env.CLIENT_EMAIL, // your client's email
       from: {
         email: process.env.FROM_EMAIL, // verified sender in SendGrid
         name: "Website Contact",       // optional display name
       },
-      subject: "New Contact Form Submission",
+      subject: `New Contact Form Submission - ${formattedDate}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       html: `
         <p><strong>Name:</strong> ${name}</p>
