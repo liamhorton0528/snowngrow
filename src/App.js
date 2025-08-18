@@ -24,9 +24,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <AnimatedRoutes />
-        <Footer />
+        <Header id="header" />
+        <div id='content'>
+          <AnimatedRoutes />
+        </div>
+        <Footer id="footer" />
       </Router>
     </div>
   );

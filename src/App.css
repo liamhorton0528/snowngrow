@@ -1,19 +1,40 @@
 .App {
   text-align: center;
+  /* font-family: 'poppins'; */
+  background: linear-gradient(to right, #FFFFFF, #CFF3C4);
+  color: #221654;
+  flex: 1;
+}
+h2, h3, h4, h5, h6 {
+  /* font-family:Georgia, 'Times New Roman', Times, serif; */
 }
 
-.container {
-  margin-inline: 2em;
+h2 { 
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-  margin-inline: 2em;
   text-align: center;
+  background-color: #CFF3C4;
 }
 
 .header_link {
-  margin-inline: 1em;
+  /* margin-inline: 1em; */
 }
+
+/* .header_container {
+  top: 0;
+  position: absolute;
+  width: 100%;
+} */
 
 .header_content {
   display: flex;
@@ -24,16 +45,41 @@
 }
 
 .header_item {
-  flex: 1;
   text-align: center;
 }
 
 .links, .footer_logo_container {
-  text-align: left;
+  /* text-align: left; */
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-left: 1em;
 }
 
 .contact_link {
   text-align: right;
+  margin-right: 1em;
+}
+
+.button_green {
+  border: 1px solid white;
+  padding: 1em 1.5em;
+  background-color: #4D7F3D;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+.button_blue {
+  border: 1px solid white;
+  padding: 1em 1.5em;
+  background-color: #3284C1;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
 }
 
 .social_links {
@@ -41,31 +87,41 @@
 }
 
 .logo {
-  max-width: 260px;
+  width: 20em;
+  max-width: 90px;
 }
 
 .footer {
-  margin-inline: 2em;
   text-align: center;
+  width: 100%;
 }
 
 .footer_container {
-  position: fixed;
   bottom: 0;
   width: 100%;
+  background-color: #CFF3C4;
+  
 }
 
 .footer_content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5em;
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .footer_item {
-  flex: 1;
+  /* flex: 1; */
   text-align: center;
+  min-width: 100px;
+}
+
+.footer_links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .social_links {
@@ -75,3 +131,294 @@
 .social_link {
   margin-inline: 1em;
 }
+
+.credits {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 1em 4em;
+}
+
+.page_content {
+  position:static;
+}
+
+.welcome_container {
+  padding-block: 5em 7em;
+  background-image:url('./welcome.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome_div {
+  font-weight:500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-inline: 13%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1em;
+  border-radius: 15px;
+}
+
+.services_container {
+  padding-block: 3em;
+}
+
+.services_div {
+  display: flex;
+  margin-inline: 10%;
+  flex-wrap: wrap;
+  gap: 2rem; 
+}
+
+.service_item {
+  text-align: left;
+  /* margin-inline: 2em; */
+  flex: 1 1 30%; 
+  /* min-width: 100px;*/
+  /* max-width: 100%;  */
+}
+
+.service_img {
+  /* max-width: 300px; */
+  max-height: 220px;
+  border-radius: 5px;
+}
+
+.reviews_container {
+  padding-block: 3em 5em;
+}
+
+.reviews_div {
+  display: flex;
+  margin-inline: 2%;
+  flex-wrap: wrap;
+  gap: 1rem; 
+  justify-content: center;
+}
+
+.review_item {
+  text-align: left;
+  /* margin-inline: 1em; */
+  flex: 1 1 500%; 
+  min-width: 70px;
+  max-width: 70%;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 1em;
+  background-color: white;
+}
+
+.rating {
+  padding-block: 10em;
+}
+
+.faq_container {
+  padding-block: 1em 3em;
+}
+
+.faq_div {
+  margin-inline: 10%;
+}
+
+.faq_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  justify-content: space-between;
+}
+
+.faq_item {
+  flex: 1 1 30%; 
+  min-width: 100px;
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: inherit;
+  padding: 1em;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  text-align: left;
+  align-self:flex-start;
+  background-color: white;
+}
+
+.faq_item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.faq_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq_question h5 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.faq_answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.faq_answer.open {
+  max-height: 500px; 
+  opacity: 1;
+  margin-top: 0.5em;
+}
+
+.contact_container {
+  display:  flex;
+  flex-direction: column;
+}
+
+.contact_form {
+  align-items: center;
+  margin-block: 1em 3em;
+  margin-inline: 3%;
+}
+
+form {
+  text-align: left;
+  align-self: center;
+  justify-self: center;
+}
+
+input[type='text'],
+input[type='email'] {
+  max-width: 100%;
+  min-width: 350px;
+  height: 20px;
+  margin-block: 0.5em;
+}
+
+.center_form_content {
+  text-align:center;
+}
+
+
+textarea {
+  min-height: 100px;
+  max-height: 100%;
+  min-width: 350px;
+  max-width: 100%;
+  margin-top: 0.5em;
+}
+
+.family_container {
+  background-image:url('./team-pic.jpeg');
+  background-size:cover;
+  background-position:top;
+  box-shadow: inset 0em -10em 40em -10em rgba(0, 0, 0, 0.7);
+  min-height: 700px;
+}
+
+.family_div {
+  display: flex;
+  justify-content:center;
+  padding: 25em 3em 5em 3em;
+  margin-inline: 5%;
+  flex-wrap: wrap;
+}
+
+.family_content {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 1em 2em;
+}
+
+.family_text {
+  max-width: 550px;
+  text-align: left;
+}
+
+.family_item {
+  margin-inline: 3em;
+}
+
+.team_div {
+  text-align: left;
+  margin: 6em 3em 3em 3em;
+}
+
+.season_icon {
+  max-width: 40px;
+}
+
+.team_member_container {
+  flex: 1 1 30%; 
+  min-width: 100px;
+  max-width: 50%;
+  min-height: 10em;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: inherit;
+  padding: 1em;
+  transition: box-shadow 0.3s;
+  align-self:flex-start;
+  background-color: white;
+}
+
+.team_member_text {
+  /* text-align: start; */
+  top: 0;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  justify-content: space-between;
+}
+
+.team_member {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.team_seasons {
+  display: flex;
+}
+
+.careers_container {
+  text-align: left;
+  padding: 0em 3em 3em 3em;
+}
+
+.carousel_div {
+  margin: 2em auto;       /* center horizontally */
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-inner {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* .carouselExampleIndicators {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 700px;
+} */
