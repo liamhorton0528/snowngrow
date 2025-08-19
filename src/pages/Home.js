@@ -162,11 +162,9 @@ function ContactForm({refProp}) {
                     <label>Email <span style={{color: 'red'}}>*</span></label><br/>
                     <input type='email' name='email' onChange={handleChange} required /><br/>
                     <label>Message <span style={{color: 'red'}}>*</span></label><br/>
-                    <textarea placeholder='Type your message...' name='message' onChange={handleChange} required /><br/><br/>
+                    <textarea placeholder='Type your message...' name='message' onChange={handleChange} required />
                     <div className='center_form_content'>
-                        <input type='checkbox' id='terms' name='terms' required />
-                        <label for="terms">&nbsp;I accept the <a href='#'>Terms</a> <span style={{color: 'red'}}>*</span></label>
-                        <br/><br/><button className='button_blue' type='submit'>Submit</button>
+                        <br/><button className='button_blue' type='submit'>Submit</button>
                     </div>
                     <p>{status}</p>
                 </form>

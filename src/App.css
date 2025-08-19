@@ -360,8 +360,8 @@ textarea {
 .team_member_container {
   flex: 1 1 30%; 
   min-width: 100px;
-  max-width: 50%;
-  min-height: 10em;
+  max-width: 45%;
+  min-height: 12em;
   border: 1px solid black;
   border-radius: 5px;
   background: inherit;

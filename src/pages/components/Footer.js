@@ -25,9 +25,6 @@ export default function Footer() {
                 <hr/>
                 <div className="credits">
                     <small>© 2024 Relume. All rights reserved.</small>
-                    <small><a href='#'>Privacy Policy</a></small>
-                    <small><a href='#'>Terms of Service</a></small>
-                    <small><a href='#'>Cookies Settings</a></small>
                 </div>
             </div>
         </div>
