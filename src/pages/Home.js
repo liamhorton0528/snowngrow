@@ -18,7 +18,7 @@ export default function Home() {
         <div className='page_content'>
             <Welcome /> 
             <Services />
-            <Reviews />
+            {/* <Reviews /> */}
             {/* <FAQ /> */}
             <Carousel />
             <ContactForm refProp={contactRef} />
